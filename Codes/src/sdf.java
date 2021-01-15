@@ -1,15 +1,16 @@
 import java.util.*;
-public class foodcorner
+public class sdf
 {
 public static void main(String args[])
 {
 Scanner sc=new Scanner(System.in);
+
 System.out.println("Enter 1. Sign UP, 2. Sign IN");
-switch(sc.nextInt())
+switch(sc.nextInt()):
 {
 case 1:
 System.out.println("Enter your phone number");
-Long phone=sc.nextLong();
+Long phone=c.nextLong();
 File myFile = new File(String.valueOf(phone)+".txt");
         try
 {
@@ -20,10 +21,10 @@ File myFile = new File(String.valueOf(phone)+".txt");
 FileWriter fr=new FileWriter(String.valueOf(phone)+".txt");
 BufferedWriter br=new BufferedWriter(fr);
 PrintWriter pr=new PrintWriter(br);
-System.out.println("Enter your name:");
+System.out.printn("Enter your name:")
 pr.println(sc.next());
 pr.println(phone);
-System.out.println("Enter your address:");
+System.out.printn("Enter your address:")
 pr.println(sc.next());
 pr.close();
         }
@@ -31,12 +32,12 @@ else{
             System.out.println("Account with that phone number already exist....");
         }
         }
-catch(IOException e) {
+catch (IOException e) {
             e.printStackTrace();
         }
 break;
 case 2:
-System.out.println("Enter 1-update profile, 2- delete profile, 3-view your profile");
+System.out.println("Enter 1-update profile, 2- delete profile, 3-view your profile")
 switch(sc.nextnt())
 {
 case 1:
@@ -44,9 +45,9 @@ System.out.println("Updating profile:");
 FileWriter fr=new FileWriter(String.valueOf(phone)+".txt");
 BufferedWriter br=new BufferedWriter(fr);
 PrintWriter pr=new PrintWriter(br);
-System.out.println("Enter your name:");
+System.out.printn("Enter your name:")
 pr.println(sc.next());
-System.out.println("Enter your address:");
+System.out.printn("Enter your address:")
 pr.println(sc.next());
 pr.close();
 break;
@@ -95,5 +96,6 @@ System.out.println("Thankyou!!");
 }
 }
 }
+
 
 
